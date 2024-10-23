@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cutoff Mark Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function updateFields() {
+            var stream = document.getElementById('stream').value;
+            var biologyField = document.getElementById('biologyField');
+            var mathField = document.getElementById('mathField');
+            
+            if (stream === 'Agriculture') {
+                biologyField.classList.remove('hidden');
+                mathField.classList.add('hidden');
+            } else {
+                biologyField.classList.add('hidden');
+                mathField.classList.remove('hidden');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cutoff Mark Calculator</h1>
+        <form method="POST">
+            <label for="stream">Choose Stream:</label>
+            <select name="stream" id="stream" onchange="updateFields()" required>
+                <option value="Engineering">Engineering</option>
+                <option value="Agriculture">Agriculture</option>
+            </select>
+
+            <div id="mathField">
+                <label for="math">Math Mark:</label>
+                <input type="text" name="math" id="math">
+            </div>
+
+            <div id="biologyField" class="hidden">
+                <label for="biology">Biology Mark:</label>
+                <input type="text" name="biology" id="biology">
+            </div>
+
+            <label for="chemistry">Chemistry Mark:</label>
+            <input type="text" name="chemistry" id="chemistry" required>
+
+            <label for="physics">Physics Mark:</label>
+            <input type="text" name="physics" id="physics" required>
+
+            <label for="protocol">Choose Protocol:</label>
+            <select name="protocol" id="protocol" required>
+                <option value="TCP">TCP</option>
+                <option value="UDP">UDP</option>
+            </select>
+
+            <input type="submit" value="Calculate Cutoff">
+        </form>
+
+        <p>{{ response }}</p>
+    </div>
+</body>
+</html>
