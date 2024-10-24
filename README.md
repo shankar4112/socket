@@ -30,3 +30,64 @@ This project is organized in a single-file format. The Python file `app.py` incl
    ```bash
    git clone https://github.com/shankar4112/socket_programming.git
    cd cutoff-calculator
+# Cutoff Mark Calculator
+
+This project calculates the cutoff marks for Engineering and Agriculture streams, allowing users to choose between TCP and UDP protocols for communication.
+
+## Installation
+
+### Dependencies
+
+To get started, install the necessary dependencies:
+
+```bash
+pip install Flask
+## Running the Servers
+
+You need to run both the TCP and UDP servers. Open two separate terminal windows:
+
+### Terminal 1: Run the TCP Server
+
+```bash
+python app.py tcp_server
+python app.py udp_server
+
+How to Use
+Choose a Stream:
+
+Engineering: Input Math, Physics, and Chemistry marks.
+Agriculture: Input Biology, Physics, and Chemistry marks.
+Choose a Protocol:
+
+Select either TCP or UDP.
+Enter Marks and Calculate:
+
+Input the marks and click "Calculate" to get the cutoff result.
+Example
+Engineering Stream:
+Math: 85
+Physics: 90
+Chemistry: 80
+Protocol: TCP
+Result: Cutoff is 62.5
+
+Agriculture Stream:
+Biology: 92
+Physics: 85
+Chemistry: 88
+Protocol: UDP
+Result: Cutoff is 66.25
+
+Tech Stack
+Backend: Flask, Python
+Frontend: HTML, CSS
+Servers: Python Sockets for TCP and UDP communication
+Protocols: TCP and UDP
+
+
+## Tech Stack
+
+- **Backend**: Flask, Python
+- **Frontend**: HTML, CSS
+- **Servers**: Python Sockets for TCP and UDP communication
+- **Protocols**: TCP and UDP
