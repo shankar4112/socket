@@ -8,6 +8,8 @@ The calculator dynamically adjusts between using **Math** (for Engineering) or *
 
 ## Features
 
+
+
 - Choose between Engineering (Math) and Agriculture (Biology) streams.
 - Support for two communication protocols: **TCP** and **UDP**.
 - Dynamically show or hide input fields based on the selected stream.
@@ -23,7 +25,9 @@ This project is organized in a single-file format. The Python file `app.py` incl
 - Python 3.x
 - Flask (Install using `pip install Flask`)
 - Basic understanding of Python sockets and networking.
+![WhatsApp Image 2025-01-21 at 11 45 35_1fc4a092](https://github.com/user-attachments/assets/32089c64-359b-4197-88db-0b3115ab35be)
 
+![WhatsApp Image 2025-01-21 at 11 45 35_7274c123](https://github.com/user-attachments/assets/d7a766f3-26a2-487a-b715-fa4d848f67cb)
 ## How to Run
 
 1. **Clone the repository**:
