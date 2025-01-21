@@ -25,8 +25,8 @@ This project is organized in a single-file format. The Python file `app.py` incl
 - Python 3.x
 - Flask (Install using `pip install Flask`)
 - Basic understanding of Python sockets and networking.
-<img src="https://github.com/user-attachments/assets/32089c64-359b-4197-88db-0b3115ab35be" alt="Image 1" width="400" height="300">
-<img src="https://github.com/user-attachments/assets/d7a766f3-26a2-487a-b715-fa4d848f67cb" alt="Image 2" width="400" height="300">
+<img src="https://github.com/user-attachments/assets/32089c64-359b-4197-88db-0b3115ab35be" alt="Image 1" width="500" height="500">
+<img src="https://github.com/user-attachments/assets/d7a766f3-26a2-487a-b715-fa4d848f67cb" alt="Image 2" width="500" height="500">
 
 ## How to Run
 
